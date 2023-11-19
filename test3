@@ -1,0 +1,11 @@
+import openpyxl
+
+book = openpyxl.Workbook()
+
+sheet = book.active[1]
+sheet["A1"] = "Title shop"
+sheet["B1"] = "Procent cash backer"
+
+
+book.save("catalog.xlsx")
+book.close()
